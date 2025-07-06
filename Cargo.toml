@@ -1,0 +1,35 @@
+[package]
+name = "eczane-yardimci"
+version = "1.0.0"
+description = "Eczane Yardımcı Programı - Barkod ve endikasyon bazlı öneriler"
+authors = ["Eczane Yardımcı"]
+edition = "2021"
+
+[lib]
+name = "eczane_yardimci"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+tauri = { version = "1.5", features = ["api-all"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+regex = "1.0"
+anyhow = "1.0"
+thiserror = "1.0"
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true
+
+[profile.release.build-override]
+opt-level = 3 

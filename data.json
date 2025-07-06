@@ -1,0 +1,1328 @@
+{
+  "capraz_satis": {
+    "C10AA (Statinler)": {
+      "Ürünler": {
+        "Omega-3 yağ asitleri": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte, tercihen sabah veya öğle vakti",
+          "Kontrendikasyonlar": "Balık veya kabuklu deniz ürünlerine alerjisi olanlar"
+          
+        },
+        "Koenzim Q10": {
+          "Dozlama": "100-200 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Koenzim Q10'ya alerjik reaksiyon öyküsü olanlar"
+        },
+        "Kırmızı Pirinç Ekstresi": {
+          "Dozlama": "600-1200 mg/gün",
+          "Kullanım Şekli": "Gün içinde bölünerek alınabilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme, karaciğer hastalığı veya statin intoleransı öyküsü"
+        },
+        "Çörek Otu Yağı": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya hafif açlıkta alınması önerilir",
+          "Kontrendikasyonlar": "Nigella sativa alerjisi; hamilelik/emzirme döneminde"
+        }
+      },
+      "Uyarılar": "Statin tedavisi gören hastalarda ek destek amacıyla kullanılır."
+    },
+    "H03A (Tiroid İlaçları)": {
+      "Ürünler": {
+        "Selenyum": {
+          "Dozlama": "55-200 mcg/gün",
+          "Kullanım Şekli": "Kahvaltı ile birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Selenyum toksisitesi veya alerjik reaksiyon riski"
+        },
+        "Bakır": {
+          "Dozlama": "1-3 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Wilson hastalığı veya bakır birikimi riski"
+        },
+        "Çinko": {
+          "Dozlama": "15-30 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Çinko alerjisi veya kronik böbrek hastalığı"
+        },
+        "Düşük doz İyot": {
+          "Dozlama": "150 mcg/gün",
+          "Kullanım Şekli": "Öğünlerle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hipertiroidi, tiroidit veya iyot alerjisi olanlar"
+        },
+        "Ashwagandha": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Sabah veya akşam yemekleriyle birlikte alınabilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme, otoimmün hastalıklar veya tiroid bozukluğu"
+        }
+      },
+      "Uyarılar": "Tiroid hormon dengesinin korunmasına yardımcı olarak kullanılır."
+    },
+    "J01 (Antibiyotikler)": {
+      "Ürünler": {
+        "Probiyotikler": {
+          "Dozlama": "10-20 milyar CFU/gün",
+          "Kullanım Şekli": "Antibiyotik kullanımından 2 saat sonra alınması önerilir",
+          "Kontrendikasyonlar": "Ciddi immün yetmezlik veya bağırsak geçirgenliği problemi olanlar"
+        },
+        "C Vitamini": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Yüksek doz C vitamini alımına bağlı böbrek taşları riski"
+        },
+        "Çinko": {
+          "Dozlama": "15-30 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Çinko alerjisi veya kronik böbrek hastalığı"
+        },
+        "Kefir (Fermente süt ürünü)": {
+          "Dozlama": "200-300 ml/gün",
+          "Kullanım Şekli": "Gün içerisinde serin servis olarak tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Laktaz eksikliği veya süt alerjisi olanlar"
+        }
+      },
+      "Uyarılar": "Antibiyotik tedavisi sırasında sindirim sisteminin desteklenmesi için önerilir."
+    },
+    "G04C (Prostat İlaçları)": {
+      "Ürünler": {
+        "Kabak Çekirdeği Ekstresi": {
+          "Dozlama": "1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Kabak çekirdeği alerjisi"
+        },
+        "Saw Palmetto": {
+          "Dozlama": "320 mg/gün",
+          "Kullanım Şekli": "Gün içinde bir kez alınması önerilir",
+          "Kontrendikasyonlar": "Hormon duyarlılığı, prostat kanseri öyküsü veya hamilelik/emzirme durumları"
+        },
+        "Likopen": {
+          "Dozlama": "10-20 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Likopen takviyelerine karşı alerji öyküsü"
+        }
+      },
+      "Uyarılar": "Prostat sağlığını desteklemek amacıyla kullanılır."
+    },
+    "N05A (Antipsikotikler)": {
+      "Ürünler": {
+        "Passiflora Ekstresi": {
+          "Dozlama": "250-500 mg/gün",
+          "Kullanım Şekli": "Gece yatmadan önce alınması önerilir",
+          "Kontrendikasyonlar": "Aşırı sedasyon veya merkezi sinir sistemi depresyonu öyküsü"
+        },
+        "Melisa": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Akşam saatlerinde veya yatmadan önce alınması önerilir",
+          "Kontrendikasyonlar": "Sedatif ilaç kullanımı veya alerjik reaksiyon öyküsü"
+        },
+        "B6 Vitamini": {
+          "Dozlama": "50-100 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "B6 vitamini fazlalığı veya alerji öyküsü"
+        }
+      },
+      "Uyarılar": "Antipsikotik tedavi sürecinde ek sedatif destek amacıyla kullanılabilir."
+    },
+    "C01 (Kalp İlaçları)": {
+      "Ürünler": {
+        "Omega-3 yağ asitleri": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi olanlar"
+        },
+        "Koenzim Q10": {
+          "Dozlama": "100-200 mg/gün",
+          "Kullanım Şekli": "Öğünle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Koenzim Q10'ya alerjik reaksiyon öyküsü olanlar"
+        },
+        "Magnezyum": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Akşam yemeğinden sonra alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek yetmezliği veya magnezyum intoleransı"
+        },
+        "Sarımsak Ekstresi": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Sarımsak alerjisi veya kan sulandırıcı tedavi görenler"
+        }
+      },
+      "Uyarılar": "Kalp ve damar sağlığının desteklenmesinde kullanılır."
+    },
+    "A10 (Diyabet İlaçları)": {
+      "Ürünler": {
+        "Omega-3 yağ asitleri": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi"
+        },
+        "Zeytin Yaprağı Ekstresi": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Gün içerisinde yemeklerle birlikte alınabilir",
+          "Kontrendikasyonlar": "Zeytin alerjisi veya gastrointestinal hassasiyet"
+        },
+        "Krom": {
+          "Dozlama": "200-400 mcg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Krom alerjisi veya kronik böbrek hastalığı"
+        },
+        "Çörek Otu Yağı": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya hafif açlıkta alınması önerilir",
+          "Kontrendikasyonlar": "Nigella sativa alerjisi; hamilelik/emzirme"
+        }
+      },
+      "Uyarılar": "Diyabet yönetimine destek sağlamak amacıyla kullanılır."
+    },
+    "A10A (İnsülin ve Analogları)": {
+      "Ürünler": {
+        "Magnezyum": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya akşam alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek yetmezliği veya magnezyum intoleransı"
+        },
+        "Alfa Lipoi Asit": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Yemek öncesi alınması önerilir",
+          "Kontrendikasyonlar": "Alfa lipoi asit alerjisi; hamilelik/emzirme"
+        },
+        "Krom": {
+          "Dozlama": "200-400 mcg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Krom alerjisi veya kronik böbrek hastalığı"
+        }
+      },
+      "Uyarılar": "İnsülin tedavisi ile birlikte kan glikozunun düzenlenmesinde destek sağlar."
+    },
+    "N07B (Sigara Bırakma Ürünleri)": {
+      "Ürünler": {
+        "Zeytin Yaprağı Ekstresi": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Zeytin alerjisi veya gastrointestinal hassasiyet"
+        },
+        "Ginseng": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Sabah alınması önerilir",
+          "Kontrendikasyonlar": "Yüksek tansiyon, kalp hastalığı veya uyarıcı madde alerjisi"
+        },
+        "B Vitamini Kompleksi": {
+          "Dozlama": "Üretici önerisine göre",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "B vitamini intoleransı veya alerjik reaksiyon"
+        }
+      },
+      "Uyarılar": "Sigara bırakma sürecinde genel enerji ve metabolizma desteği sağlar."
+    },
+    "N07C (Tinnitus/Vertigo İlaçları)": {
+      "Ürünler": {
+        "Ginkgo Biloba Ekstresi": {
+          "Dozlama": "120-240 mg/gün",
+          "Kullanım Şekli": "Sabah veya öğle yemekleriyle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Kanama bozuklukları, antikoagülan kullanımı veya ginkgo alerjisi"
+        },
+        "B6 Vitamini": {
+          "Dozlama": "50-100 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "B6 vitamini fazlalığı veya alerjik reaksiyon"
+        },
+        "Magnezyum": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Akşam yemeğinden sonra alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek hastalığı veya magnezyum intoleransı"
+        }
+      },
+      "Uyarılar": "Tinnitus ve vertigo semptomlarının hafifletilmesinde destekleyici olarak kullanılır."
+    },
+    "M01A (NSAID'ler)": {
+      "Ürünler": {
+        "Omega-3 yağ asitleri": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi"
+        },
+        "Zerdeçal Ekstresi": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Mide ülseri, kanama riski veya zerdeçal alerjisi"
+        },
+        "Zencefil": {
+          "Dozlama": "250-500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Kanama bozuklukları veya zencefil alerjisi"
+        },
+        "Boswellia Serrata": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Boswellia alerjisi veya hamilelik/emzirme"
+        }
+      },
+      "Uyarılar": "NSAID'lerin yan etkilerini azaltmak ve inflamasyonu desteklemek için kullanılır."
+    },
+    "C02 (Hipertansiyon İlaçları)": {
+      "Ürünler": {
+        "Magnezyum": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Akşam yemeklerinden sonra alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek hastalığı veya magnezyum intoleransı"
+        },
+        "Koenzim Q10": {
+          "Dozlama": "100-200 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Koenzim Q10 alerjisi öyküsü"
+        },
+        "Sarımsak Ekstresi": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Sarımsak alerjisi veya kan sulandırıcı tedavi"
+        },
+        "Hibiskus Çayı": {
+          "Dozlama": "250-500 ml/gün (1-2 fincan)",
+          "Kullanım Şekli": "Sıcak olarak tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Düşük tansiyon veya hibiskus alerjisi"
+        }
+      },
+      "Uyarılar": "Hipertansiyon kontrolüne yardımcı olmak amacıyla kullanılır."
+    },
+    "L03A (Bağışıklık Güçlendiriciler)": {
+      "Ürünler": {
+        "C Vitamini": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Yüksek doz C vitamini riski (böbrek taşları)"
+        },
+        "Çinko": {
+          "Dozlama": "15-30 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Çinko alerjisi veya kronik böbrek hastalığı"
+        },
+        "Ekinezya Ekstresi": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Sabah veya öğle yemekleriyle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Alerjik reaksiyon öyküsü, astım veya otoimmün hastalık"
+        },
+        "Propolis": {
+          "Dozlama": "500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya gün içinde ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Arı ürünlerine alerjisi"
+        }
+      },
+      "Uyarılar": "Bağışıklık sisteminin desteklenmesi için kullanılır."
+    },
+    "A02B (Mide Koruyucular)": {
+      "Ürünler": {
+        "Çinko Karnozin": {
+          "Dozlama": "75 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Çinko veya karnozin alerjisi"
+        },
+        "Aloe Vera Jel": {
+          "Dozlama": "100-200 mg/gün (topikal)",
+          "Kullanım Şekli": "Temiz cilde nazikçe uygulanması önerilir",
+          "Kontrendikasyonlar": "Aloe vera alerjisi veya cilt hassasiyeti"
+        },
+        "Probiyotikler": {
+          "Dozlama": "10-20 milyar CFU/gün",
+          "Kullanım Şekli": "Antibiyotik kullanımından 2 saat sonra alınması önerilir",
+          "Kontrendikasyonlar": "İmmün yetmezlik veya bağırsak geçirgenliği problemi"
+        }
+      },
+      "Uyarılar": "Mide koruyucu etkiler için destekleyici olarak kullanılır."
+    },
+    "N06A (Antidepresanlar)": {
+      "Ürünler": {
+        "Omega-3 yağ asitleri": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi"
+        },
+        "Safran Ekstresi": {
+          "Dozlama": "30-50 mg/gün",
+          "Kullanım Şekli": "Sabah veya öğle saatlerinde alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme veya safra kesesi problemleri"
+        },
+        "B Vitamini Kompleksi": {
+          "Dozlama": "Üretici önerisine göre",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "B vitamini intoleransı veya alerjik reaksiyon"
+        }
+      },
+      "Uyarılar": "Depresif durumlarda tamamlayıcı destek olarak kullanılır."
+    },
+    "B03A (Demir Eksikliği İlaçları)": {
+      "Ürünler": {
+        "Demir Takviyesi": {
+          "Dozlama": "30-60 mg/gün",
+          "Kullanım Şekli": "Aç karnına veya C vitamini ile birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hemokromatoz veya demir birikimi riski"
+        },
+        "C Vitamini": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Demir emilimini artırmak için birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Yüksek doz C vitamini riski (böbrek taşları)"
+        },
+        "Folik Asit": {
+          "Dozlama": "400-800 mcg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Folik asit alerjisi veya megaloblastik anemi öyküsü"
+        },
+        "B12 Vitamini": {
+          "Dozlama": "1000 mcg/gün",
+          "Kullanım Şekli": "Aç karnına veya yemekle birlikte alınabilir",
+          "Kontrendikasyonlar": "B12 vitamini alerjisi"
+        }
+      },
+      "Uyarılar": "Anemi tedavisinde destekleyici olarak kullanılır."
+    },
+    "N04 (Parkinson Hastalığı İlaçları)": {
+      "Ürünler": {
+        "Koenzim Q10": {
+          "Dozlama": "100-200 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Koenzim Q10 alerjisi"
+        },
+        "B6 Vitamini": {
+          "Dozlama": "50-100 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "B6 vitamini fazlalığı veya alerjik reaksiyon"
+        },
+        "Magnezyum": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Akşam yemeğinden sonra alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek yetmezliği veya magnezyum intoleransı"
+        }
+      },
+      "Uyarılar": "Parkinson hastalığı tedavisinde tamamlayıcı destek olarak kullanılır."
+    },
+    "G03C (Menopoz İlaçları)": {
+      "Ürünler": {
+        "Keten Tohumu Ekstresi": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Keten tohumu veya yüksek lif alımına duyarlılık"
+        },
+        "Dong Quai": {
+          "Dozlama": "40-80 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme veya hormon duyarlılığı"
+        },
+        "D Vitamini": {
+          "Dozlama": "1000-2000 IU/gün",
+          "Kullanım Şekli": "Sabah veya öğle saatlerinde alınması önerilir",
+          "Kontrendikasyonlar": "Hipervitaminoz D, sarkoidoz veya granulomatöz hastalıklar"
+        },
+        "K2 Vitamini": {
+          "Dozlama": "90-120 mcg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "K vitamini alerjisi veya antikoagülan tedavi görenler"
+        }
+      },
+      "Uyarılar": "Menopoz semptomlarını hafifletmek için kullanılır."
+    },
+    "N02C (Migren İlaçları)": {
+      "Ürünler": {
+        "Riboflavin (B2)": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Sabah veya öğle yemekleriyle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "B2 alerjisi veya aşırı doz alımına bağlı cilt reaksiyonları"
+        },
+        "Magnezyum": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Akşam yemeğinden sonra alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek hastalığı veya magnezyum intoleransı"
+        }
+      },
+      "Uyarılar": "Migren ataklarının sıklığını azaltmada destekleyici olarak kullanılır."
+    },
+    "A07E (Inflamatuvar Bağırsak Hastalıkları İlaçları)": {
+      "Ürünler": {
+        "Probiyotikler": {
+          "Dozlama": "10-20 milyar CFU/gün",
+          "Kullanım Şekli": "Antibiyotik kullanımından 2 saat sonra alınması önerilir",
+          "Kontrendikasyonlar": "Ciddi immün yetmezlik veya şiddetli bağırsak enfeksiyonu"
+        },
+        "Omega-3 yağ asitleri": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi"
+        },
+        "Glutamin": {
+          "Dozlama": "5-10 g/gün",
+          "Kullanım Şekli": "Yemek öncesi veya sonrası alınması önerilir",
+          "Kontrendikasyonlar": "Metabolik bozukluklar veya glutamin intoleransı"
+        },
+        "Zerdeçal Ekstresi": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Mide ülseri, kanama riski veya zerdeçal alerjisi"
+        }
+      },
+      "Uyarılar": "Inflamasyonu azaltmaya yardımcı olmak amacıyla kullanılır."
+    },
+    "Kan Şekeri Dengeleme": {
+      "Ürünler": {
+        "Tarçın Ekstresi": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme veya karaciğer hastalığı öyküsü"
+        },
+        "Berberin": {
+          "Dozlama": "500 mg/gün",
+          "Kullanım Şekli": "Öğün öncesi alınması önerilir",
+          "Kontrendikasyonlar": "Gebelik, emzirme veya karaciğer/böbrek fonksiyon bozukluğu"
+        },
+        "Alfa-lipoik Asit": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya öğün öncesi alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme veya alerjik reaksiyon"
+        }
+      },
+      "Uyarılar": "Kan glikoz düzeylerinin düzenlenmesinde destekleyici olarak kullanılır."
+    }
+  },
+  "yeni_capraz_satis": {
+    "R03 (Astım İlaçları)": {
+      "Ürünler": {
+        "Omega-3 yağ asitleri": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi"
+        },
+        "Magnezyum": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Akşam yemeğinden sonra alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek hastalığı veya magnezyum intoleransı"
+        },
+        "Vitamin D": {
+          "Dozlama": "1000-2000 IU/gün",
+          "Kullanım Şekli": "Sabah yemekleriyle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hipervitaminoz D, sarkoidoz veya granulomatöz hastalıklar"
+        },
+        "Quercetin": {
+          "Dozlama": "500 mg/gün",
+          "Kullanım Şekli": "Öğünle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Quercetin alerjisi veya gastrointestinal hassasiyet"
+        }
+      },
+      "Uyarılar": "Astım semptomlarının hafifletilmesi ve solunum fonksiyonlarının desteklenmesi amaçlanır."
+    },
+    "M09 (Osteoporoz İlaçları)": {
+      "Ürünler": {
+        "Kalsiyum": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Aç karnına veya C vitamini ile birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hiperkalsemi, böbrek taşları veya kalsiyum birikimi riski"
+        },
+        "D Vitamini": {
+          "Dozlama": "1000-2000 IU/gün",
+          "Kullanım Şekli": "Sabah veya öğle yemekleriyle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hipervitaminoz D, sarkoidoz veya granulomatöz hastalıklar"
+        },
+        "K2 Vitamini": {
+          "Dozlama": "90-120 mcg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "K vitamini alerjisi veya antikoagülan tedavi görenler"
+        },
+        "Magnezyum": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Akşam yemeğinden sonra alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek hastalığı veya magnezyum intoleransı"
+        },
+        "Kollajen Peptitleri": {
+          "Dozlama": "2.5-5 g/gün",
+          "Kullanım Şekli": "Spor sonrası veya yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Protein intoleransı veya kollajen alerjisi"
+        }
+      },
+      "Uyarılar": "Kemik yoğunluğunu artırmaya yönelik osteoporoz riskinin azaltılmasında destek sağlar."
+    }
+  },
+  "endikasyon": {
+    "Örnek Endikasyon": {
+      "Ürünler": {},
+      "Açıklama": "Bu alan, endikasyon ile ilgili detaylı açıklamaların girileceği yerdir. Bireyselleştirilmiş yaklaşımlar eklenebilir.",
+      "Uyarılar": "Kullanım öncesi hastanın klinik durumu değerlendirilmelidir.",
+      "Dozlama": "Standart dozlar; hastaya göre ayarlanır.",
+      "Kontrendikasyonlar": "Kronik hastalık, hamilelik, emzirme veya ciddi alerji durumlarında uzman kontrolü gereklidir."
+    },
+    "Uyuyamama": {
+      "Ürünler": {
+        "Passiflora kapsülü": {
+          "Dozlama": "250-500 mg",
+          "Kullanım Şekli": "Gece yatmadan önce alınması önerilir",
+          "Kontrendikasyonlar": "Alerji veya aşırı sedasyon riski"
+        },
+        "Magnezyum Sitrat": {
+          "Dozlama": "200-400 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek hastalığı"
+        },
+        "Melatonin": {
+          "Dozlama": "1-3 mg",
+          "Kullanım Şekli": "Gece yatmadan önce alınması önerilir",
+          "Kontrendikasyonlar": "Gebelik, emzirme veya çocuklarda"
+        }
+      },
+      "Açıklama": "Genel uyku düzeninin desteklenmesi amaçlanır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Stres": {
+      "Ürünler": {
+        "Ashwagandha kökü ekstresi": {
+          "Dozlama": "300-600 mg",
+          "Kullanım Şekli": "Sabah veya akşam yemekleriyle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme, otoimmün hastalıklar veya tiroid bozukluğu"
+        },
+        "Rhodiola rosea": {
+          "Dozlama": "200-400 mg",
+          "Kullanım Şekli": "Öğle saatlerinde alınması önerilir",
+          "Kontrendikasyonlar": "Yüksek tansiyon veya kalp hastalığı"
+        },
+        "L-theanine": {
+          "Dozlama": "100-200 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Nadir alerjik reaksiyon"
+        }
+      },
+      "Açıklama": "Stresin azaltılmasına ve adaptasyonun desteklenmesine yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Anksiyete": {
+      "Ürünler": {
+        "5-HTP": {
+          "Dozlama": "50-100 mg",
+          "Kullanım Şekli": "Öğün öncesi alınması önerilir",
+          "Kontrendikasyonlar": "Depresyon, bipolar bozukluk veya serotonin sendromu riski"
+        },
+        "GABA": {
+          "Dozlama": "250-500 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Aşırı sedasyon veya merkezi sinir sistemi bozuklukları"
+        },
+        "Lavanta yağı kapsül": {
+          "Dozlama": "Üretici önerisine göre",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Lavanta alerjisi"
+        }
+      },
+      "Açıklama": "Sürekli endişe ve anksiyete semptomlarını hafifletmeye yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Depresyon": {
+      "Ürünler": {
+        "St. John's Wort Ekstresi": {
+          "Dozlama": "300 mg",
+          "Kullanım Şekli": "Sabah alınması önerilir",
+          "Kontrendikasyonlar": "Antidepresan ilaçlarla etkileşim, bipolar bozukluk"
+        },
+        "SAM-e": {
+          "Dozlama": "200-400 mg",
+          "Kullanım Şekli": "Öğün öncesi alınması önerilir",
+          "Kontrendikasyonlar": "Karaciğer hastalığı, hamilelik/emzirme"
+        },
+        "Omega-3 balık yağı": {
+          "Dozlama": "1000-2000 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi"
+        }
+      },
+      "Açıklama": "Depresif durumların desteklenmesinde tamamlayıcı olarak kullanılır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Konsantrasyon Eksikliği": {
+      "Ürünler": {
+        "Bacopa monnieri": {
+          "Dozlama": "300-600 mg",
+          "Kullanım Şekli": "Yemekle birlikte veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme veya alerji"
+        },
+        "Ginkgo biloba": {
+          "Dozlama": "120 mg",
+          "Kullanım Şekli": "Sabah veya öğle yemekleriyle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Kanama bozuklukları veya antikoagülan ilaç kullanımı"
+        },
+        "Fosfatidilserin": {
+          "Dozlama": "100-300 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Alerjik reaksiyon veya nörolojik bozukluklar"
+        }
+      },
+      "Açıklama": "Hafıza ve dikkat fonksiyonlarının desteklenmesi amaçlanır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Yorgunluk": {
+      "Ürünler": {
+        "Koenzim Q10": {
+          "Dozlama": "100-200 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Koenzim Q10 alerjisi"
+        },
+        "B12 Vitamini": {
+          "Dozlama": "1000 mcg",
+          "Kullanım Şekli": "Aç karnına veya yemekle birlikte alınabilir",
+          "Kontrendikasyonlar": "B12 intoleransı"
+        },
+        "Demir Takviyesi": {
+          "Dozlama": "30-60 mg",
+          "Kullanım Şekli": "Aç karnına veya C vitamini ile birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hemokromatoz veya gastrointestinal kanama"
+        }
+      },
+      "Açıklama": "Enerji seviyelerinin artırılmasına yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Baş Ağrısı": {
+      "Ürünler": {
+        "Butterbur Ekstresi": {
+          "Dozlama": "75-150 mg",
+          "Kullanım Şekli": "Sabah veya öğle alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme veya alerji öyküsü"
+        },
+        "Feverfew": {
+          "Dozlama": "100-200 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Alerjik reaksiyon veya hamilelik"
+        },
+        "Magnezyum": {
+          "Dozlama": "200-400 mg",
+          "Kullanım Şekli": "Akşam yemeğinden sonra alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek hastalığı"
+        }
+      },
+      "Açıklama": "Migren ve gerilim tipi baş ağrılarında destekleyici etki sağlar.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Eklem Ağrısı": {
+      "Ürünler": {
+        "Glukozamin": {
+          "Dozlama": "1500 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Deniz ürünlerine alerji veya şeker hastalığı"
+        },
+        "Kondroitin Sülfat": {
+          "Dozlama": "800-1200 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Deniz ürünlerine alerji"
+        },
+        "Zerdeçal Ekstresi": {
+          "Dozlama": "500-1000 mg",
+          "Kullanım Şekli": "Yemekle birlikte veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Mide ülseri veya kanama riski"
+        }
+      },
+      "Açıklama": "Eklem iltihabını azaltarak ağrıların hafifletilmesine yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Kas Ağrısı": {
+      "Ürünler": {
+        "BCAA": {
+          "Dozlama": "5-10 g/servis",
+          "Kullanım Şekli": "Spor sonrası veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek hastalığı"
+        },
+        "L-glutamin": {
+          "Dozlama": "5-10 g/servis",
+          "Kullanım Şekli": "Spor sonrası veya yemek öncesi alınması önerilir",
+          "Kontrendikasyonlar": "Karaciğer hastalığı"
+        },
+        "Topikal Arnica Krem": {
+          "Dozlama": "Kullanım talimatına göre",
+          "Kullanım Şekli": "Hasarlı bölgeye ince tabaka halinde uygulanması önerilir",
+          "Kontrendikasyonlar": "Cilt irritasyonu veya arnica alerjisi"
+        }
+      },
+      "Açıklama": "Egzersiz sonrası kas ağrılarının hafifletilmesine yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Sindirim Sorunları": {
+      "Ürünler": {
+        "Probiyotik Karışım": {
+          "Dozlama": "10-20 milyar CFU",
+          "Kullanım Şekli": "Antibiyotik kullanımından 2 saat sonra alınması önerilir",
+          "Kontrendikasyonlar": "Ciddi immün yetmezlik veya şiddetli bağırsak enfeksiyonu"
+        },
+        "Zencefil Kapsül": {
+          "Dozlama": "250-500 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Kanama bozukluğu veya zencefil alerjisi"
+        },
+        "Enterik Kaplamalı Nane Yağı": {
+          "Dozlama": "Üretici önerisine göre",
+          "Kullanım Şekli": "Özellikle yemek sonrası kullanılması önerilir",
+          "Kontrendikasyonlar": "Nane alerjisi veya gastroözofageal reflü"
+        }
+      },
+      "Açıklama": "Sindirim sistemini rahatlatmaya yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Kabızlık": {
+      "Ürünler": {
+        "Psyllium Husk": {
+          "Dozlama": "5-10 g",
+          "Kullanım Şekli": "Yemekle birlikte veya su ile karıştırılarak alınması önerilir",
+          "Kontrendikasyonlar": "Bağırsak tıkanıklığı veya aşırı lif intoleransı"
+        },
+        "Aloe Vera Suyu": {
+          "Dozlama": "100-200 ml",
+          "Kullanım Şekli": "Soğuk tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Aloe vera alerjisi veya kronik diyare"
+        },
+        "Probiyotik": {
+          "Dozlama": "10 milyar CFU",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "İmmün yetmezlik"
+        }
+      },
+      "Açıklama": "Bağırsak hareketlerini destekleyerek kabızlığı giderir.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "İshal": {
+      "Ürünler": {
+        "Probiyotik Preparat": {
+          "Dozlama": "10-20 milyar CFU",
+          "Kullanım Şekli": "Antibiyotik kullanımından 2 saat sonra alınması önerilir",
+          "Kontrendikasyonlar": "Şiddetli immünosupresif durumlar"
+        },
+        "Çinko Takviyesi": {
+          "Dozlama": "15-30 mg",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Çinko alerjisi veya kronik böbrek hastalığı"
+        },
+        "Pirinç Suyu": {
+          "Dozlama": "200-300 ml",
+          "Kullanım Şekli": "Oda sıcaklığında tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Diyabet hastalarında glisemik kontrol gerektirebilir"
+        }
+      },
+      "Açıklama": "İshal durumunda sıvı ve elektrolit dengesinin sağlanmasına yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Mide Yanması": {
+      "Ürünler": {
+        "Kalsiyum Karbonat Çiğneme Tableti": {
+          "Dozlama": "500-1000 mg",
+          "Kullanım Şekli": "Aç karnına veya yemekle birlikte çiğnenerek alınması önerilir",
+          "Kontrendikasyonlar": "Hiperkalsemi, böbrek taşları"
+        },
+        "Aloe Vera Suyu": {
+          "Dozlama": "100-200 ml",
+          "Kullanım Şekli": "Soğuk tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Aloe vera alerjisi"
+        },
+        "Papatya Çayı": {
+          "Dozlama": "1-2 fincan",
+          "Kullanım Şekli": "Sıcak olarak demlendikten sonra tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Bitki intoleransı veya alerjik reaksiyon"
+        }
+      },
+      "Açıklama": "Reflü ve mide ekşimesinin hafifletilmesine yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Cilt Kuruluğu": {
+      "Ürünler": {
+        "Hyaluronik Asit Serumu": {
+          "Dozlama": "0.1-0.5% topikal",
+          "Kullanım Şekli": "Temiz cilde ince tabaka halinde uygulanması önerilir",
+          "Kontrendikasyonlar": "Cilt irritasyonu veya alerjik reaksiyon"
+        },
+        "E Vitamini Yağı": {
+          "Dozlama": "1-2% topikal",
+          "Kullanım Şekli": "Nazikçe masaj yaparak uygulanması önerilir",
+          "Kontrendikasyonlar": "E vitamini alerjisi"
+        },
+        "Shea Yağı": {
+          "Dozlama": "Uygulama miktarı değişkendir",
+          "Kullanım Şekli": "Direkt cilde uygulanabilir veya serumla karıştırılarak kullanılabilir",
+          "Kontrendikasyonlar": "Cilt yağlılığı veya alerjik reaksiyon"
+        }
+      },
+      "Açıklama": "Kuru ve pullu ciltlerin nemlendirilmesi için kullanılır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Sivilce": {
+      "Ürünler": {
+        "Çay Ağacı Yağı": {
+          "Dozlama": "2-5 damla seyreltilmiş",
+          "Kullanım Şekli": "Pamuklu çubukla nazikçe cilde uygulanması önerilir",
+          "Kontrendikasyonlar": "Çay ağacı yağına alerji veya cilt irritasyonu"
+        },
+        "Çinko Takviyesi": {
+          "Dozlama": "15-30 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Çinko alerjisi"
+        },
+        "Salisilik Asit Krem": {
+          "Dozlama": "1-2% topikal",
+          "Kullanım Şekli": "Temiz cilde ince tabaka halinde uygulanması önerilir",
+          "Kontrendikasyonlar": "Cilt hassasiyeti veya alerjik reaksiyon"
+        }
+      },
+      "Açıklama": "Akne ve sivilce oluşumunun azaltılmasına yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Egzama": {
+      "Ürünler": {
+        "Kolloidal Yulaf": {
+          "Dozlama": "1/2-1 su bardağı (banyo olarak)",
+          "Kullanım Şekli": "Ilık suya karıştırılarak banyo şeklinde kullanılması önerilir",
+          "Kontrendikasyonlar": "Alerjik reaksiyon veya cilt irritasyonu"
+        },
+        "Hindistancevizi Yağı": {
+          "Dozlama": "Topikal uygulama",
+          "Kullanım Şekli": "İnce tabaka halinde cilde sürülmesi önerilir",
+          "Kontrendikasyonlar": "Hindistancevizi alerjisi"
+        },
+        "Aloe Vera Jeli": {
+          "Dozlama": "5-10 ml topikal",
+          "Kullanım Şekli": "Temiz cilde nazikçe uygulanması önerilir",
+          "Kontrendikasyonlar": "Aloe vera alerjisi"
+        }
+      },
+      "Açıklama": "Egzama belirtilerinin hafifletilmesi ve cildin yatıştırılması amacıyla kullanılır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Sedef Hastalığı": {
+      "Ürünler": {
+        "Balık Yağı": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi"
+        },
+        "D Vitamini": {
+          "Dozlama": "1000-2000 IU/gün",
+          "Kullanım Şekli": "Sabah veya öğle yemekleriyle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hipervitaminoz D, sarkoidoz veya granulomatöz hastalıklar"
+        },
+        "Çinko Oksit Krem": {
+          "Dozlama": "Üretici önerisine göre topikal",
+          "Kullanım Şekli": "İnce tabaka halinde cilde uygulanması önerilir",
+          "Kontrendikasyonlar": "Çinko alerjisi"
+        }
+      },
+      "Açıklama": "Sedef hastalığı semptomlarının hafifletilmesi için kullanılır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Alerjiler": {
+      "Ürünler": {
+        "Quercetin": {
+          "Dozlama": "500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Quercetin alerjisi"
+        },
+        "C Vitamini": {
+          "Dozlama": "500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya aç karnına alınabilir",
+          "Kontrendikasyonlar": "Yüksek doz C vitamini riski (böbrek taşları)"
+        },
+        "Burun Yıkama Solüsyonu": {
+          "Dozlama": "Kullanım talimatına göre",
+          "Kullanım Şekli": "İnce sprey veya damla şeklinde uygulanması önerilir",
+          "Kontrendikasyonlar": "Alerjik reaksiyon veya cilt irritasyonu"
+        }
+      },
+      "Açıklama": "Mevsimsel alerjik reaksiyonların hafifletilmesine yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Soğuk Algınlığı": {
+      "Ürünler": {
+        "Çinko Pastil": {
+          "Dozlama": "1-2 adet/gün",
+          "Kullanım Şekli": "Yemek aralarında ağızda çiğnenmesi önerilir",
+          "Kontrendikasyonlar": "Çinko alerjisi veya gastrointestinal rahatsızlık"
+        },
+        "C Vitamini": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Yüksek doz C vitamini riski"
+        },
+        "Ekinezya": {
+          "Dozlama": "300 mg/gün",
+          "Kullanım Şekli": "Sabah veya öğle saatlerinde alınması önerilir",
+          "Kontrendikasyonlar": "Alerjik reaksiyon, otoimmün hastalıklar"
+        }
+      },
+      "Açıklama": "Üst solunum yolu enfeksiyonunun belirtilerinin hafifletilmesine yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Grip": {
+      "Ürünler": {
+        "Elderberry Şurubu": {
+          "Dozlama": "30 ml/gün",
+          "Kullanım Şekli": "Öğünle birlikte veya gün içinde ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Elderberry alerjisi"
+        },
+        "Çinko": {
+          "Dozlama": "15-30 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Çinko alerjisi"
+        },
+        "C Vitamini": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya aç karnına alınabilir",
+          "Kontrendikasyonlar": "Yüksek doz C vitamini riski"
+        }
+      },
+      "Açıklama": "Grip semptomlarının hafifletilmesinde destekleyici olarak kullanılır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Bağışıklık Güçlendirme": {
+      "Ürünler": {
+        "Beta-glukan": {
+          "Dozlama": "250-500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Otoimmün hastalıklar veya aşırı bağışıklık aktivitesi"
+        },
+        "C Vitamini": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Yüksek doz C vitamini riski"
+        },
+        "Çinko": {
+          "Dozlama": "15-30 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Çinko alerjisi"
+        }
+      },
+      "Açıklama": "Bağışıklık sistemini desteklemek amacıyla kullanılır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Kilo Verme": {
+      "Ürünler": {
+        "Yeşil Çay Ekstresi": {
+          "Dozlama": "500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Kafein hassasiyeti veya alerjik reaksiyon"
+        },
+        "CLA": {
+          "Dozlama": "1000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme veya hormonal dengesizlik"
+        },
+        "L-Karnitin": {
+          "Dozlama": "500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Alerjik reaksiyon veya kalp hastalığı"
+        }
+      },
+      "Açıklama": "Metabolizmayı hızlandırarak kilo kaybına destek olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Kilo Alma": {
+      "Ürünler": {
+        "Protein Tozu": {
+          "Dozlama": "25-30 g/servis",
+          "Kullanım Şekli": "Öğünle birlikte veya spor sonrası tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Protein intoleransı, böbrek veya karaciğer hastalığı"
+        },
+        "Kilo Alma Shake": {
+          "Dozlama": "250-300 ml/servis",
+          "Kullanım Şekli": "Gün içerisinde ara öğün olarak tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Sindirim problemleri veya alerjik reaksiyon"
+        },
+        "Sağlıklı Yağ": {
+          "Dozlama": "10-15 ml ek",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Yağ intoleransı veya alerji"
+        }
+      },
+      "Açıklama": "Kas kütlesinin desteklenmesi ve sağlıklı kilo artışı için kullanılır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Kas Geliştirme": {
+      "Ürünler": {
+        "Whey Protein": {
+          "Dozlama": "20-30 g/servis",
+          "Kullanım Şekli": "Spor sonrası hemen alınması önerilir",
+          "Kontrendikasyonlar": "Laktoz intoleransı veya süt alerjisi"
+        },
+        "Kre-Alkalin": {
+          "Dozlama": "2-3 g/servis",
+          "Kullanım Şekli": "Öğün öncesi alınması önerilir",
+          "Kontrendikasyonlar": "Sindirim sorunları veya alerjik reaksiyon"
+        },
+        "BCAA": {
+          "Dozlama": "5-10 g/servis",
+          "Kullanım Şekli": "Spor sonrası veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek hastalığı veya metabolik bozukluk"
+        }
+      },
+      "Açıklama": "Kas kütlesinin artırılması ve güçlendirilmesi amacıyla kullanılır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Enerji Artırma": {
+      "Ürünler": {
+        "B Kompleksi": {
+          "Dozlama": "Üretici önerisine göre",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "B vitamini intoleransı"
+        },
+        "Ginseng": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Sabah alınması önerilir",
+          "Kontrendikasyonlar": "Yüksek tansiyon veya kalp hastalığı"
+        },
+        "Guarana": {
+          "Dozlama": "100-200 mg/gün",
+          "Kullanım Şekli": "Öğle saatlerinde alınması önerilir",
+          "Kontrendikasyonlar": "Kafein hassasiyeti veya anksiyete bozuklukları"
+        }
+      },
+      "Açıklama": "Günlük enerji seviyelerinin artırılmasına yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Detoks": {
+      "Ürünler": {
+        "Chlorella": {
+          "Dozlama": "3-5 g/gün",
+          "Kullanım Şekli": "Öğünle birlikte suyla karıştırılarak alınması önerilir",
+          "Kontrendikasyonlar": "Bağırsak tıkanıklığı veya aşırı detoks riski"
+        },
+        "Karahindiba Kök Ekstresi": {
+          "Dozlama": "300-500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Alerjik reaksiyon veya mide rahatsızlığı"
+        },
+        "Limon Suyu": {
+          "Dozlama": "30-50 ml/gün",
+          "Kullanım Şekli": "Taze sıkılmış olarak tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Mide asidi aşırı veya ülseratik gastrit"
+        }
+      },
+      "Açıklama": "Vücudun toksinlerden arındırılmasına yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Karaciğer Sağlığı": {
+      "Ürünler": {
+        "Milk Thistle": {
+          "Dozlama": "140-280 mg silymarin/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Alkolik karaciğer hastalığı veya silymarin alerjisi"
+        },
+        "Devedikeni Tohumu Ekstresi": {
+          "Dozlama": "300-500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme veya alerjik reaksiyon"
+        },
+        "Karahindiba Kök Ekstresi": {
+          "Dozlama": "300-500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Alerjik reaksiyon veya gastrointestinal rahatsızlık"
+        }
+      },
+      "Açıklama": "Karaciğer fonksiyonlarının desteklenmesine yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Böbrek Sağlığı": {
+      "Ürünler": {
+        "Kızılcık Suyu": {
+          "Dozlama": "200-300 ml/gün",
+          "Kullanım Şekli": "Soğuk olarak tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Dişeti hastalığı veya aşırı şeker içeriği"
+        },
+        "D-Mannoz": {
+          "Dozlama": "500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "İdrar yolu tıkanıklığı veya böbrek hastalığı"
+        },
+        "Maydanoz Suyu": {
+          "Dozlama": "100-150 ml/gün",
+          "Kullanım Şekli": "Taze sıkılmış olarak tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Maydanoz alerjisi veya aşırı idrar söktürücü etkiler"
+        }
+      },
+      "Açıklama": "Böbrek fonksiyonlarının korunmasına yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Kalp Sağlığı": {
+      "Ürünler": {
+        "Omega-3 Balık Yağı": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi"
+        },
+        "Koenzim Q10": {
+          "Dozlama": "100-200 mg/gün",
+          "Kullanım Şekli": "Öğünle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Koenzim Q10 alerjisi"
+        },
+        "Sarımsak Ekstresi": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Sarımsak alerjisi veya kan sulandırıcı tedavi görenler"
+        }
+      },
+      "Açıklama": "Kalp ve damar sisteminin desteklenmesi için kullanılır.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Tansiyon Düşürme": {
+      "Ürünler": {
+        "Sarımsak Kapsülü": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Sarımsak alerjisi veya düşük tansiyon"
+        },
+        "Magnezyum": {
+          "Dozlama": "200-400 mg/gün",
+          "Kullanım Şekli": "Akşam yemeklerinden sonra alınması önerilir",
+          "Kontrendikasyonlar": "Böbrek hastalığı"
+        },
+        "Hibiskus Çayı": {
+          "Dozlama": "250-500 ml/gün (1-2 fincan)",
+          "Kullanım Şekli": "Sıcak tüketilmesi önerilir",
+          "Kontrendikasyonlar": "Düşük tansiyon veya hibiskus alerjisi"
+        }
+      },
+      "Açıklama": "Hipertansif hastalarda kan basıncının düşürülmesine yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Kolesterol Düşürme": {
+      "Ürünler": {
+        "Kırmızı Maya Pirinci Ekstresi": {
+          "Dozlama": "600-1200 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme, karaciğer hastalığı"
+        },
+        "Omega-3 yağ asitleri": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi"
+        },
+        "Psyllium Kabuğu": {
+          "Dozlama": "5-10 g/gün",
+          "Kullanım Şekli": "Yemekle birlikte suyla karıştırılarak alınması önerilir",
+          "Kontrendikasyonlar": "Bağırsak tıkanıklığı veya alerjik reaksiyon"
+        }
+      },
+      "Açıklama": "LDL düzeylerinin azaltılmasına destek sağlar.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    }
+  },
+  "yeni_endikasyon": {
+    "Antioksidan Destek": {
+      "Ürünler": {
+        "Resveratrol": {
+          "Dozlama": "100-200 mg/gün",
+          "Kullanım Şekli": "Öğünle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme veya kan sulandırıcı tedavi"
+        },
+        "Quercetin": {
+          "Dozlama": "500 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Quercetin alerjisi veya gastrointestinal hassasiyet"
+        },
+        "Coenzyme Q10": {
+          "Dozlama": "100-200 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Koenzim Q10 alerjisi"
+        },
+        "Vitamin C": {
+          "Dozlama": "500-1000 mg/gün",
+          "Kullanım Şekli": "Aç karnına veya yemekle birlikte alınabilir",
+          "Kontrendikasyonlar": "Yüksek doz C vitamini alımına bağlı böbrek taşları riski"
+        }
+      },
+      "Açıklama": "Hücresel oksidatif stresi azaltarak yaşlanma sürecini yavaşlatmaya yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Hafıza Destek": {
+      "Ürünler": {
+        "Ginkgo biloba": {
+          "Dozlama": "120 mg/gün",
+          "Kullanım Şekli": "Sabah veya öğle yemekleriyle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Kanama bozuklukları, antikoagülan ilaç kullanımı"
+        },
+        "Alpha-GPC": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Öğün öncesi alınması önerilir",
+          "Kontrendikasyonlar": "Hiperventilasyon veya alerjik reaksiyon"
+        },
+        "Fosfatidilserin": {
+          "Dozlama": "100-300 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Alerjik reaksiyon veya nörolojik bozukluklar"
+        },
+        "Bacopa monnieri": {
+          "Dozlama": "300-600 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Hamilelik, emzirme veya alerji"
+        }
+      },
+      "Açıklama": "Beyin fonksiyonlarının ve hafızanın desteklenmesine yardımcı olur.",
+      "Uyarılar": "",
+      "Kontrendikasyonlar": ""
+    },
+    "Ağız Sağlığı": {
+      "Ürünler": {
+        "Xylitol Sakız": {
+          "Dozlama": "Kullanım talimatına göre",
+          "Kullanım Şekli": "Yutulmadan çiğnenmesi önerilir",
+          "Kontrendikasyonlar": "Xylitol intoleransı veya şeker alerjisi"
+        },
+        "Çinko Takviyesi": {
+          "Dozlama": "15-30 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Çinko alerjisi"
+        },
+        "Nane Yağı (Topikal)": {
+          "Dozlama": "2-3 damla seyreltilmiş",
+          "Kullanım Şekli": "Ağız içi bölgelere nazikçe uygulanması önerilir",
+          "Kontrendikasyonlar": "Nane alerjisi"
+        }
+      },
+      "Açıklama": "Diş ve diş eti sağlığının korunması, ağız kokusunun giderilmesi ve ağız florasının desteklenmesi amaçlanır.",
+      "Uyarılar": "Kullanım öncesi diş hekimi kontrolü önerilir.",
+      "Kontrendikasyonlar": "Xylitol veya nane alerjisi olan bireylerde kullanım uygun değildir."
+    },
+    "Göz Sağlığı": {
+      "Ürünler": {
+        "Lutein": {
+          "Dozlama": "10 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Lutein alerjisi"
+        },
+        "Zeaksantin": {
+          "Dozlama": "2 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte veya ara öğün olarak alınması önerilir",
+          "Kontrendikasyonlar": "Zeaksantin alerjisi"
+        },
+        "Omega-3 Balık Yağı": {
+          "Dozlama": "1000-2000 mg/gün",
+          "Kullanım Şekli": "Yemekle birlikte alınması önerilir",
+          "Kontrendikasyonlar": "Balık alerjisi"
+        }
+      },
+      "Açıklama": "Göz sağlığının korunması ve görme fonksiyonlarının desteklenmesi amacıyla kullanılır.",
+      "Uyarılar": "Kullanım öncesi göz doktoru kontrolü önerilir.",
+      "Kontrendikasyonlar": "Belirtilen ürünlere alerjisi olan bireylerde kullanım önerilmez."
+    }
+  }
+}

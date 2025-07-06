@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eczane Yardımcı Programı</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand header-title" href="#">
+                <i class="fas fa-clinic-medical me-2"></i>
+                Eczane Yardımcı Programı
+            </a>
+            
+            <div class="navbar-nav ms-auto">
+                <button id="themeToggle" class="btn btn-outline-light btn-sm">
+                    <i class="fas fa-moon"></i> Karanlık Mod
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid mt-4">
+        <!-- Stats Cards -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card text-center hover-lift">
+                    <div class="card-body">
+                        <i class="fas fa-barcode fa-2x text-primary mb-2"></i>
+                        <h5 class="card-title" id="barkodCount">-</h5>
+                        <p class="card-text">Barkod Kaydı</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center hover-lift">
+                    <div class="card-body">
+                        <i class="fas fa-pills fa-2x text-success mb-2"></i>
+                        <h5 class="card-title" id="crossSalesCount">-</h5>
+                        <p class="card-text">Çapraz Satış Kategorisi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center hover-lift">
+                    <div class="card-body">
+                        <i class="fas fa-stethoscope fa-2x text-info mb-2"></i>
+                        <h5 class="card-title" id="indicationCount">-</h5>
+                        <p class="card-text">Endikasyon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center hover-lift">
+                    <div class="card-body">
+                        <i class="fas fa-clock fa-2x text-warning mb-2"></i>
+                        <h5 class="card-title" id="lastUpdate">-</h5>
+                        <p class="card-text">Son Güncelleme</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="barkod-tab" data-bs-toggle="tab" data-bs-target="#barkod" type="button" role="tab">
+                    <i class="fas fa-barcode me-2"></i>Barkod/QR Kod Arama
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="endikasyon-tab" data-bs-toggle="tab" data-bs-target="#endikasyon" type="button" role="tab">
+                    <i class="fas fa-stethoscope me-2"></i>Endikasyon Arama
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="istatistik-tab" data-bs-toggle="tab" data-bs-target="#istatistik" type="button" role="tab">
+                    <i class="fas fa-chart-bar me-2"></i>İstatistikler
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ai-tab" data-bs-toggle="tab" data-bs-target="#ai" type="button" role="tab">
+                    <i class="fas fa-robot me-2"></i>AI Asistan
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="dermokozmetik-tab" data-bs-toggle="tab" data-bs-target="#dermokozmetik" type="button" role="tab">
+                    <i class="fas fa-spa me-2"></i>Dermokozmetik AI
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="mainTabsContent">
+            <!-- Barkod Tab -->
+            <div class="tab-pane fade show active" id="barkod" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5><i class="fas fa-search me-2"></i>Barkod/QR Kod Arama</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="barkodInput" class="form-label">
+                                        <i class="fas fa-barcode me-1"></i>Barkod veya QR Kod Verisi
+                                    </label>
+                                    <input type="text" class="form-control" id="barkodInput" 
+                                           placeholder="13 haneli barkod veya QR kod verisi girin...">
+                                    <div class="form-text">
+                                        <i class="fas fa-info-circle me-1"></i>
+                                        QR kod verilerini yapıştırabilir veya barkod numarasını manuel girebilirsiniz.
+                                    </div>
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary w-100" id="searchBtn">
+                                    <i class="fas fa-search me-2"></i>Ara
+                                </button>
+                                
+                                <div class="mt-3">
+                                    <small class="text-muted">
+                                        <i class="fas fa-keyboard me-1"></i>
+                                        Enter tuşu ile de arama yapabilirsiniz
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Quick Help -->
+                        <div class="card mt-3">
+                            <div class="card-header">
+                                <h6><i class="fas fa-question-circle me-2"></i>Hızlı Yardım</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        13 haneli barkod numarası
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        QR kod verisi (01 + barkod + ek veri)
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Barkod içeren herhangi bir metin
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5><i class="fas fa-list-alt me-2"></i>Arama Sonuçları</h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="barkodResults" class="results-area">
+                                    <div class="text-center text-muted">
+                                        <i class="fas fa-search fa-3x mb-3"></i>
+                                        <p>Barkod veya QR kod verisi girin ve arama yapın</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Endikasyon Tab -->
+            <div class="tab-pane fade" id="endikasyon" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5><i class="fas fa-stethoscope me-2"></i>Endikasyon Arama</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="searchIndication" class="form-label">
+                                        <i class="fas fa-search me-1"></i>Endikasyon Ara
+                                    </label>
+                                    <input type="text" class="form-control" id="searchIndication" 
+                                           placeholder="Endikasyon adı yazın...">
+                                    <div class="form-text">
+                                        <i class="fas fa-filter me-1"></i>
+                                        Endikasyonları filtrelemek için yazmaya başlayın
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-3">
+                                    <label for="indicationSelect" class="form-label">
+                                        <i class="fas fa-list me-1"></i>Endikasyon Seçin
+                                    </label>
+                                    <select class="form-select" id="indicationSelect">
+                                        <option value="">Endikasyon seçin...</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="alert alert-info">
+                                    <i class="fas fa-lightbulb me-2"></i>
+                                    <strong>İpucu:</strong> Endikasyon seçerek çapraz satış önerilerini görün
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5><i class="fas fa-pills me-2"></i>Endikasyon Sonuçları</h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="endikasyonResults" class="results-area">
+                                    <div class="text-center text-muted">
+                                        <i class="fas fa-stethoscope fa-3x mb-3"></i>
+                                        <p>Endikasyon seçin ve önerileri görün</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- İstatistikler Tab -->
+            <div class="tab-pane fade" id="istatistik" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5><i class="fas fa-chart-pie me-2"></i>Veri İstatistikleri</h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="dataStats">
+                                    <div class="text-center">
+                                        <div class="loading-spinner"></div>
+                                        <p class="mt-2">İstatistikler yükleniyor...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5><i class="fas fa-history me-2"></i>Son Aramalar</h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="recentSearches">
+                                    <div class="text-center text-muted">
+                                        <i class="fas fa-history fa-2x mb-2"></i>
+                                        <p>Henüz arama yapılmadı</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Asistan Tab -->
+            <div class="tab-pane fade" id="ai" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header bg-gradient-primary text-white">
+                                <h5><i class="fas fa-robot me-2"></i>AI Sağlık Asistanı</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="symptomInput" class="form-label">
+                                        <i class="fas fa-comment-medical me-1"></i>Semptomlarınızı Açıklayın
+                                    </label>
+                                    <textarea class="form-control" id="symptomInput" rows="4" 
+                                              placeholder="Örnek: Baş ağrım var, uyuyamıyorum, stresliyim..."></textarea>
+                                    <div class="form-text">
+                                        <i class="fas fa-lightbulb me-1"></i>
+                                        Semptomlarınızı doğal dille yazın, AI size uygun ürünleri önerecek
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="patientAge" class="form-label">
+                                        <i class="fas fa-user me-1"></i>Yaş
+                                    </label>
+                                    <input type="number" class="form-control" id="patientAge" 
+                                           placeholder="Yaşınızı girin" min="1" max="120">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="patientGender" class="form-label">
+                                        <i class="fas fa-venus-mars me-1"></i>Cinsiyet
+                                    </label>
+                                    <select class="form-select" id="patientGender">
+                                        <option value="">Seçiniz...</option>
+                                        <option value="erkek">Erkek</option>
+                                        <option value="kadin">Kadın</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="patientWeight" class="form-label">
+                                        <i class="fas fa-weight me-1"></i>Kilo (kg)
+                                    </label>
+                                    <input type="number" class="form-control" id="patientWeight" 
+                                           placeholder="Kilonuzu girin" min="20" max="200">
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary w-100 mb-2" id="aiAnalyzeBtn">
+                                    <i class="fas fa-brain me-2"></i>AI Analiz Et
+                                </button>
+
+                                <button type="button" class="btn btn-outline-secondary w-100 mb-2" id="clearAiBtn">
+                                    <i class="fas fa-eraser me-2"></i>Temizle
+                                </button>
+                                
+                                <button type="button" class="btn btn-outline-info w-100 mb-2" id="apiKeyBtn">
+                                    <i class="fas fa-key me-2"></i>API Key Ayarla
+                                </button>
+                                
+                                <button type="button" class="btn btn-outline-warning w-100 mb-2" id="testAiBtn">
+                                    <i class="fas fa-vial me-2"></i>AI Test Et
+                                </button>
+                                
+                                <button type="button" class="btn btn-outline-secondary w-100" id="debugBtn">
+                                    <i class="fas fa-bug me-2"></i>Debug Bilgileri
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- AI Özellikleri -->
+                        <div class="card mt-3">
+                            <div class="card-header">
+                                <h6><i class="fas fa-magic me-2"></i>AI Özellikleri</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Doğal dil semptom analizi
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Kişiselleştirilmiş öneriler
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Yaş/cinsiyet bazlı dozaj
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Etkileşim uyarıları
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header bg-gradient-success text-white">
+                                <h5><i class="fas fa-pills me-2"></i>AI Önerileri</h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="aiResults" class="results-area">
+                                    <div class="text-center text-muted">
+                                        <i class="fas fa-robot fa-3x mb-3"></i>
+                                        <p>Semptomlarınızı yazın ve AI asistanınız size özel öneriler sunsun</p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-shield-alt me-1"></i>
+                                            Bu öneriler sadece bilgilendirme amaçlıdır, doktor tavsiyesi yerine geçmez
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AI Analiz Detayları -->
+                        <div class="card mt-3" id="aiAnalysisDetails" style="display: none;">
+                            <div class="card-header">
+                                <h6><i class="fas fa-chart-line me-2"></i>AI Analiz Detayları</h6>
+                            </div>
+                            <div class="card-body">
+                                <div id="aiAnalysisContent">
+                                    <!-- AI analiz detayları buraya gelecek -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dermokozmetik Tab -->
+            <div class="tab-pane fade" id="dermokozmetik" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header bg-gradient-info text-white">
+                                <h5><i class="fas fa-spa me-2"></i>Dermokozmetik AI</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <label for="dermokozmetikSymptomInput" class="form-label">
+                                        <i class="fas fa-comment-medical me-1"></i>Dermokozmetik Semptomlarınızı Açıklayın
+                                    </label>
+                                    <textarea class="form-control" id="dermokozmetikSymptomInput" rows="4" 
+                                              placeholder="Örnek: Cilt kuruluğu var, kırışıklar var, yaşlanma işaretleri var..."></textarea>
+                                    <div class="form-text">
+                                        <i class="fas fa-lightbulb me-1"></i>
+                                        Dermokozmetik semptomlarınızı doğal dille yazın, AI size uygun ürünleri önerecek
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="dermokozmetikPatientAge" class="form-label">
+                                        <i class="fas fa-user me-1"></i>Yaş
+                                    </label>
+                                    <input type="number" class="form-control" id="dermokozmetikPatientAge" 
+                                           placeholder="Yaşınızı girin" min="1" max="120">
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="dermokozmetikPatientGender" class="form-label">
+                                        <i class="fas fa-venus-mars me-1"></i>Cinsiyet
+                                    </label>
+                                    <select class="form-select" id="dermokozmetikPatientGender">
+                                        <option value="">Seçiniz...</option>
+                                        <option value="erkek">Erkek</option>
+                                        <option value="kadin">Kadın</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="dermokozmetikPatientWeight" class="form-label">
+                                        <i class="fas fa-weight me-1"></i>Kilo (kg)
+                                    </label>
+                                    <input type="number" class="form-control" id="dermokozmetikPatientWeight" 
+                                           placeholder="Kilonuzu girin" min="20" max="200">
+                                </div>
+                                
+                                <button type="button" class="btn btn-primary w-100 mb-2" id="dermokozmetikAnalyzeBtn">
+                                    <i class="fas fa-brain me-2"></i>Dermokozmetik AI Analiz Et
+                                </button>
+
+                                <button type="button" class="btn btn-outline-secondary w-100 mb-2" id="clearDermokozmetikBtn">
+                                    <i class="fas fa-eraser me-2"></i>Temizle
+                                </button>
+                                
+                                <button type="button" class="btn btn-outline-info w-100 mb-2" id="dermokozmetikApiKeyBtn">
+                                    <i class="fas fa-key me-2"></i>Dermokozmetik API Key Ayarla
+                                </button>
+                                
+                                <button type="button" class="btn btn-outline-warning w-100 mb-2" id="dermokozmetikTestBtn">
+                                    <i class="fas fa-vial me-2"></i>Dermokozmetik AI Test Et
+                                </button>
+                                
+                                <button type="button" class="btn btn-outline-secondary w-100" id="dermokozmetikDebugBtn">
+                                    <i class="fas fa-bug me-2"></i>Dermokozmetik Debug Bilgileri
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Dermokozmetik Özellikleri -->
+                        <div class="card mt-3">
+                            <div class="card-header">
+                                <h6><i class="fas fa-magic me-2"></i>Dermokozmetik AI Özellikleri</h6>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Doğal dil semptom analizi
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Kişiselleştirilmiş öneriler
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Yaş/cinsiyet bazlı dozaj
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="fas fa-check text-success me-2"></i>
+                                        Etkileşim uyarıları
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header bg-gradient-success text-white">
+                                <h5><i class="fas fa-pills me-2"></i>Dermokozmetik AI Önerileri</h5>
+                            </div>
+                            <div class="card-body">
+                                <div id="dermokozmetikResults" class="results-area">
+                                    <div class="text-center text-muted">
+                                        <i class="fas fa-robot fa-3x mb-3"></i>
+                                        <p>Dermokozmetik semptomlarınızı yazın ve AI asistanınız size özel öneriler sunsun</p>
+                                        <small class="text-muted">
+                                            <i class="fas fa-shield-alt me-1"></i>
+                                            Bu öneriler sadece bilgilendirme amaçlıdır, doktor tavsiyesi yerine geçmez
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dermokozmetik Analiz Detayları -->
+                        <div class="card mt-3" id="dermokozmetikAnalysisDetails" style="display: none;">
+                            <div class="card-header">
+                                <h6><i class="fas fa-chart-line me-2"></i>Dermokozmetik AI Analiz Detayları</h6>
+                            </div>
+                            <div class="card-body">
+                                <div id="dermokozmetikAnalysisContent">
+                                    <!-- Dermokozmetik analiz detayları buraya gelecek -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- API Key Modal -->
+    <div class="modal fade" id="apiKeyModal" tabindex="-1" aria-labelledby="apiKeyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-gradient-primary text-white">
+                    <h5 class="modal-title" id="apiKeyModalLabel">
+                        <i class="fas fa-robot me-2"></i>Gemini AI API Key
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        <strong>Gemini AI kullanmak için API key gereklidir.</strong>
+                        <br>
+                        <small>
+                            1. <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a>'ya gidin<br>
+                            2. Yeni API key oluşturun<br>
+                            3. Aşağıya yapıştırın
+                        </small>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="apiKeyInput" class="form-label">
+                            <i class="fas fa-key me-1"></i>API Key
+                        </label>
+                        <input type="password" class="form-control" id="apiKeyInput" 
+                               placeholder="AIzaSy... (Gemini API key'inizi girin)">
+                        <div class="form-text">
+                            <i class="fas fa-shield-alt me-1"></i>
+                            API key'iniz güvenli şekilde saklanacaktır
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="apiKeyStatus" class="form-label">
+                            <i class="fas fa-check-circle me-1"></i>Durum
+                        </label>
+                        <div id="apiKeyStatus" class="form-control-plaintext">
+                            <span class="text-muted">API key ayarlanmamış</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i>İptal
+                    </button>
+                    <button type="button" class="btn btn-primary" id="saveApiKeyBtn">
+                        <i class="fas fa-save me-2"></i>Kaydet
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0 text-muted">
+                <i class="fas fa-heart text-danger me-1"></i>
+                Eczane Yardımcı Programı v2.0 - Electron
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Gemini AI Config -->
+    <script src="gemini-config.js"></script>
+    
+    <!-- Stok Sistemi -->
+    <script src="stok-sistemi.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basit Test</title>
+</head>
+<body>
+    <h1>Basit Test</h1>
+    <div id="result"></div>
+    
+    <script>
+        console.log('Sayfa yükleniyor...');
+        
+        // Script yükleme kontrolü
+        const script = document.createElement('script');
+        script.src = 'gemini-config.js';
+        script.onload = function() {
+            console.log('✅ gemini-config.js yüklendi');
+            console.log('window.geminiAI:', window.geminiAI);
+            
+            if (window.geminiAI) {
+                document.getElementById('result').innerHTML = '<p style="color: green;">✅ Gemini AI başarıyla yüklendi!</p>';
+                console.log('API Key:', window.geminiAI.getApiKey() ? 'Mevcut' : 'Yok');
+            } else {
+                document.getElementById('result').innerHTML = '<p style="color: red;">❌ Gemini AI yüklenemedi</p>';
+            }
+        };
+        script.onerror = function() {
+            console.error('❌ gemini-config.js yüklenemedi');
+            document.getElementById('result').innerHTML = '<p style="color: red;">❌ gemini-config.js dosyası bulunamadı</p>';
+        };
+        
+        document.head.appendChild(script);
+    </script>
+</body>
+</html> 

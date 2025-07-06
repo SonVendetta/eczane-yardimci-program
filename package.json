@@ -1,0 +1,96 @@
+{
+  "name": "eczane-yardimci",
+  "version": "2.0.0",
+  "description": "Eczane Yardımcı Programı - Çapraz satış önerileri için modern desktop uygulaması",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "build": "electron-builder",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "keywords": [
+    "eczane",
+    "pharmacy",
+    "barkod",
+    "cross-sales",
+    "electron",
+    "desktop",
+    "türkçe"
+  ],
+  "author": {
+    "name": "AI Assistant",
+    "email": "assistant@example.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4"
+  },
+  "build": {
+    "appId": "com.ezcaneyardimci.app",
+    "productName": "Eczane Yardımcı Programı",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!node_modules/**/*",
+      "!dist/**/*",
+      "!build/**/*",
+      "!*.md"
+    ],
+    "mac": {
+      "category": "public.app-category.medical",
+      "icon": "assets/icon.icns",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": ["x64", "arm64"]
+        }
+      ]
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "linux": {
+      "icon": "assets/icon.png",
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": ["x64"]
+        }
+      ],
+      "category": "Medical"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    },
+    "dmg": {
+      "title": "Eczane Yardımcı Programı",
+      "icon": "assets/icon.icns"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/example/eczane-yardimci.git"
+  },
+  "bugs": {
+    "url": "https://github.com/example/eczane-yardimci/issues"
+  },
+  "homepage": "https://github.com/example/eczane-yardimci#readme"
+} 

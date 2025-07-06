@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI Test - Eczane Yardımcı</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .test-card { background: white; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .result-box { background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 15px; margin: 10px 0; }
+        .success { color: #198754; }
+        .error { color: #dc3545; }
+        .warning { color: #ffc107; }
+        .info { color: #0dcaf0; }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="test-card p-4">
+                    <h3 class="text-center mb-4">
+                        <i class="fas fa-robot text-primary"></i>
+                        Gemini AI Test Sayfası
+                    </h3>
+                    
+                    <div class="mb-4">
+                        <h5>Test Durumu</h5>
+                        <div id="testStatus" class="result-box">
+                            <i class="fas fa-spinner fa-spin"></i> Test başlatılıyor...
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>API Key Durumu</h5>
+                        <div id="apiKeyStatus" class="result-box">
+                            Kontrol ediliyor...
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>Bağlantı Testi</h5>
+                        <div id="connectionTest" class="result-box">
+                            Test ediliyor...
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>AI Analiz Testi</h5>
+                        <div class="mb-3">
+                            <label class="form-label">Test Semptomları:</label>
+                            <input type="text" id="testSymptoms" class="form-control" value="baş ağrısı ve yorgunluk" placeholder="Semptomları girin">
+                        </div>
+                        <button id="testAnalysis" class="btn btn-primary">
+                            <i class="fas fa-brain"></i> AI Analiz Testi
+                        </button>
+                        <div id="analysisResult" class="result-box mt-3" style="display: none;">
+                            Analiz sonucu burada görünecek...
+                        </div>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h5>Hata Ayıklama</h5>
+                        <div id="debugInfo" class="result-box">
+                            <small>Hata ayıklama bilgileri burada görünecek...</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="gemini-config.js"></script>
+    <script>
+        // Test fonksiyonları
+        async function runTests() {
+            updateStatus('testStatus', 'Testler başlatılıyor...', 'info');
+            
+            // API Key kontrolü
+            await checkApiKey();
+            
+            // Bağlantı testi
+            await testConnection();
+            
+            updateStatus('testStatus', 'Tüm testler tamamlandı!', 'success');
+        }
+        
+        async function checkApiKey() {
+            try {
+                if (window.geminiAI && window.geminiAI.getApiKey()) {
+                    const apiKey = window.geminiAI.getApiKey();
+                    const maskedKey = apiKey.substring(0, 10) + '...' + apiKey.substring(apiKey.length - 4);
+                    updateStatus('apiKeyStatus', `✅ API Key ayarlı: ${maskedKey}`, 'success');
+                } else {
+                    updateStatus('apiKeyStatus', '❌ API Key ayarlanmamış', 'error');
+                }
+            } catch (error) {
+                updateStatus('apiKeyStatus', `❌ API Key hatası: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testConnection() {
+            try {
+                updateStatus('connectionTest', '🔄 Bağlantı test ediliyor...', 'info');
+                
+                if (!window.geminiAI || !window.geminiAI.isConfigured) {
+                    updateStatus('connectionTest', '❌ Gemini AI ayarlanmamış', 'error');
+                    return;
+                }
+                
+                const response = await window.geminiAI.generateContent('Merhaba, bu bir test mesajıdır.', 0.1);
+                
+                if (response && response.length > 0) {
+                    updateStatus('connectionTest', `✅ Bağlantı başarılı! Yanıt uzunluğu: ${response.length} karakter`, 'success');
+                } else {
+                    updateStatus('connectionTest', '⚠️ Bağlantı başarılı ama yanıt boş', 'warning');
+                }
+            } catch (error) {
+                updateStatus('connectionTest', `❌ Bağlantı hatası: ${error.message}`, 'error');
+            }
+        }
+        
+        async function testAnalysis() {
+            const symptoms = document.getElementById('testSymptoms').value.trim();
+            const resultDiv = document.getElementById('analysisResult');
+            
+            if (!symptoms) {
+                alert('Lütfen test semptomları girin!');
+                return;
+            }
+            
+            try {
+                resultDiv.style.display = 'block';
+                resultDiv.innerHTML = '<i class="fas fa-spinner fa-spin"></i> AI analizi yapılıyor...';
+                
+                if (!window.geminiAI || !window.geminiAI.isConfigured) {
+                    resultDiv.innerHTML = '<div class="error">❌ Gemini AI ayarlanmamış</div>';
+                    return;
+                }
+                
+                // Test verileri
+                const testIndications = {
+                    "Baş Ağrısı": {
+                        "Açıklama": "Baş ağrısı için ilaç ve takviye önerileri",
+                        "Ürünler": {
+                            "Parol": {
+                                "Dozlama": "500-1000 mg",
+                                "Kullanım Şekli": "Günde 3-4 kez",
+                                "Kontrendikasyonlar": "Mide ülseri"
+                            },
+                            "C Vitamini": {
+                                "Dozlama": "500-1000 mg/gün",
+                                "Kullanım Şekli": "Yemekle birlikte",
+                                "Kontrendikasyonlar": "Böbrek taşı riski"
+                            },
+                            "Magnezyum": {
+                                "Dozlama": "200-400 mg/gün",
+                                "Kullanım Şekli": "Akşam yemeğinden sonra",
+                                "Kontrendikasyonlar": "Böbrek yetmezliği"
+                            }
+                        }
+                    },
+                    "Yorgunluk": {
+                        "Açıklama": "Yorgunluk için vitamin ve mineral takviyeleri",
+                        "Ürünler": {
+                            "B12 Vitamini": {
+                                "Dozlama": "1000 mcg/gün",
+                                "Kullanım Şekli": "Aç karnına",
+                                "Kontrendikasyonlar": "B12 alerjisi"
+                            },
+                            "Demir": {
+                                "Dozlama": "15-30 mg/gün",
+                                "Kullanım Şekli": "Aç karnına, C vitamini ile",
+                                "Kontrendikasyonlar": "Demir birikimi hastalıkları"
+                            },
+                            "Koenzim Q10": {
+                                "Dozlama": "100-200 mg/gün",
+                                "Kullanım Şekli": "Yemekle birlikte",
+                                "Kontrendikasyonlar": "Q10 alerjisi"
+                            }
+                        }
+                    },
+                    "Stres": {
+                        "Açıklama": "Stres yönetimi için bitkisel takviyeler",
+                        "Ürünler": {
+                            "Passiflora": {
+                                "Dozlama": "250-500 mg/gün",
+                                "Kullanım Şekli": "Yatmadan önce",
+                                "Kontrendikasyonlar": "Sedatif etki"
+                            },
+                            "Melisa": {
+                                "Dozlama": "300-600 mg/gün",
+                                "Kullanım Şekli": "Akşam saatlerinde",
+                                "Kontrendikasyonlar": "Sedatif ilaç kullanımı"
+                            },
+                            "Ashwagandha": {
+                                "Dozlama": "300-600 mg/gün",
+                                "Kullanım Şekli": "Sabah veya akşam",
+                                "Kontrendikasyonlar": "Hamilelik, emzirme"
+                            }
+                        }
+                    },
+                    "Vitamin ve Mineraller": {
+                        "Açıklama": "Genel sağlık için vitamin ve mineral takviyeleri",
+                        "Ürünler": {
+                            "Multivitamin": {
+                                "Dozlama": "Günde 1 tablet",
+                                "Kullanım Şekli": "Kahvaltı ile birlikte",
+                                "Kontrendikasyonlar": "Vitamin alerjisi"
+                            },
+                            "D Vitamini": {
+                                "Dozlama": "1000-2000 IU/gün",
+                                "Kullanım Şekli": "Kahvaltı ile birlikte",
+                                "Kontrendikasyonlar": "Hipervitaminoz D"
+                            }
+                        }
+                    },
+                    "Omega-3 ve Yağ Asitleri": {
+                        "Açıklama": "Kalp ve beyin sağlığı için omega-3 takviyeleri",
+                        "Ürünler": {
+                            "Omega-3 Balık Yağı": {
+                                "Dozlama": "1000-2000 mg/gün",
+                                "Kullanım Şekli": "Yemekle birlikte",
+                                "Kontrendikasyonlar": "Balık alerjisi"
+                            }
+                        }
+                    }
+                };
+                
+                const analysis = await window.geminiAI.analyzeSymptoms(
+                    symptoms, 
+                    '35', 
+                    'Erkek', 
+                    '75', 
+                    testIndications
+                );
+                
+                console.log('AI Analiz Sonucu:', analysis);
+                
+                // Sonucu göster
+                let resultHtml = '<div class="success"><h6>✅ AI Analiz Başarılı!</h6></div>';
+                resultHtml += `<div class="mt-3"><strong>Analiz:</strong> ${analysis.analysis || 'Analiz yapıldı'}</div>`;
+                resultHtml += `<div class="mt-2"><strong>Güven Skoru:</strong> %${analysis.confidence || 'N/A'}</div>`;
+                
+                if (analysis.detected_symptoms && analysis.detected_symptoms.length > 0) {
+                    resultHtml += `<div class="mt-2"><strong>Tespit Edilen Semptomlar:</strong> ${analysis.detected_symptoms.join(', ')}</div>`;
+                }
+                
+                if (analysis.recommendations && analysis.recommendations.length > 0) {
+                    resultHtml += '<div class="mt-3"><strong>Öneriler:</strong></div>';
+                    analysis.recommendations.forEach(rec => {
+                        resultHtml += `<div class="mt-2">• ${rec.symptom}: ${rec.description}</div>`;
+                    });
+                }
+                
+                if (analysis.warnings && analysis.warnings.length > 0) {
+                    resultHtml += '<div class="mt-3"><strong>Uyarılar:</strong></div>';
+                    analysis.warnings.forEach(warning => {
+                        resultHtml += `<div class="mt-1 text-warning">• ${warning}</div>`;
+                    });
+                }
+                
+                resultDiv.innerHTML = resultHtml;
+                
+            } catch (error) {
+                console.error('AI Analiz Hatası:', error);
+                resultDiv.innerHTML = `<div class="error">❌ AI Analiz Hatası: ${error.message}</div>`;
+            }
+        }
+        
+        function updateStatus(elementId, message, type) {
+            const element = document.getElementById(elementId);
+            const icon = type === 'success' ? '✅' : type === 'error' ? '❌' : type === 'warning' ? '⚠️' : '🔄';
+            element.innerHTML = `${icon} ${message}`;
+            element.className = `result-box ${type}`;
+        }
+        
+        function updateDebugInfo() {
+            const debugDiv = document.getElementById('debugInfo');
+            let debugInfo = '<strong>Hata Ayıklama Bilgileri:</strong><br>';
+            
+            debugInfo += `• Gemini AI Yüklü: ${window.geminiAI ? 'Evet' : 'Hayır'}<br>`;
+            if (window.geminiAI) {
+                debugInfo += `• API Key Ayarlı: ${window.geminiAI.isConfigured ? 'Evet' : 'Hayır'}<br>`;
+                debugInfo += `• CORS Proxy: ${window.geminiAI.getUseProxy() ? 'Etkin' : 'Devre dışı'}<br>`;
+            }
+            debugInfo += `• Tarayıcı: ${navigator.userAgent}<br>`;
+            debugInfo += `• Zaman: ${new Date().toLocaleString('tr-TR')}`;
+            
+            debugDiv.innerHTML = debugInfo;
+        }
+        
+        // Event listeners
+        document.getElementById('testAnalysis').addEventListener('click', testAnalysis);
+        
+        // Sayfa yüklendiğinde testleri başlat
+        window.addEventListener('load', async () => {
+            updateDebugInfo();
+            await runTests();
+        });
+    </script>
+</body>
+</html> 
